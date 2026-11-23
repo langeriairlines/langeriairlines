@@ -2,16 +2,121 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>LANGERI AIRLINES a.s.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langeri Airlines a.s.</title>
     <style>
-        body { background: #0b1120; color: #fff; font-family: sans-serif; text-align: center; padding: 100px 20px; }
-        h1 { color: #d4af37; font-size: 2.5rem; margin-bottom: 20px; }
-        p { color: #94a3b8; font-size: 1.2rem; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            background: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.8)), 
+                        url('https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fbbf24;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #fbbf24;
+        }
+        main {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            font-size: 48px;
+            color: #fbbf24;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .subtitle {
+            font-size: 20px;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.75);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(15, 23, 42, 0.9);
+            font-size: 13px;
+            color: #94a3b8;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
 <body>
-    <h1>LANGERI AIRLINES a.s.</h1>
-    <p>More Than A Journey | Skytrax 5-Star Airline</p>
-    <p style="margin-top: 40px; font-size: 0.9rem;">Sídlo: Aviatická 1092/8, Praha 6 | IČO: 098 71 426</p>
+
+    <header>
+        <div class="logo">✈️ LANGERI AIRLINES</div>
+        <nav>
+            <ul>
+                <li><a href="#">O nás</a></li>
+                <li><a href="#">Destinace</a></li>
+                <li><a href="#">Flotila</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>LANGERI AIRLINES a.s.</h1>
+        <div class="subtitle">More Than A Journey | Skytrax 5-Star Airline</div>
+        
+        <div class="card">
+            <p>Vítejte na oficiálních stránkách naší letecké společnosti. Poskytujeme prvotřídní servis, bezpečné lety a maximální pohodlí na palubě našich moderních letadel. Těšíme se na vás na palubě!</p>
+        </div>
+    </main>
+
+    <footer>
+        Sídlo: Aviatická 1092/8, Praha 6 | IČO: 098 71 426<br>
+        &copy; 2026 Langeri Airlines a.s. Všechna práva vyhrazena.
+    </footer>
+
 </body>
 </html>
