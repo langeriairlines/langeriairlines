@@ -3,120 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Langeri Airlines a.s.</title>
+    <title>LANGERI AIRLINES a.s.</title>
     <style>
+        /* Základní reset a nastavení celé stránky */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
+            background-color: #161920; /* Elegantní tmavě šedo-modrá barva ladící k noční obloze */
+            color: #e2e8f0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #ffffff;
-            background: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.8)), 
-                        url('https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            line-height: 1.6;
+        }
+
+        /* Záhlaví (Hero banner) */
+        .hero-header {
+            width: 100%;
+            height: 500px; /* Výška záhlaví na počítači */
+            background-image: url('header-bg.jpg'); /* Opraveno na malé h */
             background-size: cover;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            background-position: center center;
+            background-repeat: no-repeat;
+            
+            /* Zlatá oddělovací linka dole */
+            border-bottom: 4px solid #d4af37;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
         }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background: rgba(15, 23, 42, 0.85);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        /* Hlavní prostor pro obsah webu */
+        .main-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
         }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #fbbf24;
+
+        h1 {
+            color: #d4af37;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
             letter-spacing: 1px;
         }
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #fbbf24;
-        }
-        main {
-            text-align: center;
-            padding: 60px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h1 {
-            font-size: 48px;
-            color: #fbbf24;
-            margin-bottom: 15px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-        }
-        .subtitle {
-            font-size: 20px;
-            margin-bottom: 30px;
-            letter-spacing: 0.5px;
-        }
-        .card {
-            background: rgba(30, 41, 59, 0.75);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        .card p {
-            font-size: 16px;
-            line-height: 1.6;
+
+        p {
+            font-size: 1.1rem;
             color: #cbd5e1;
+            margin-bottom: 15px;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(15, 23, 42, 0.9);
-            font-size: 13px;
-            color: #94a3b8;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+        /* Úprava výšky záhlaví pro mobilní telefony, aby se obrázek neořezával */
+        @media (max-width: 768px) {
+            .hero-header {
+                height: 240px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">✈️ LANGERI AIRLINES</div>
-        <nav>
-            <ul>
-                <li><a href="#">O nás</a></li>
-                <li><a href="#">Destinace</a></li>
-                <li><a href="#">Flotila</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Horní banner s tvou grafikou a zlatou linkou -->
+    <header class="hero-header"></header>
 
-    <main>
-        <h1>LANGERI AIRLINES a.s.</h1>
-        <div class="subtitle">More Than A Journey | Skytrax 5-Star Airline</div>
-        
-        <div class="card">
-            <p>Vítejte na oficiálních stránkách naší letecké společnosti. Poskytujeme prvotřídní servis, bezpečné lety a maximální pohodlí na palubě našich moderních letadel. Těšíme se na vás na palubě!</p>
-        </div>
+    <!-- Hlavní textová část pod čárou -->
+    <main class="main-content">
+        <h1>Vítejte na palubě LANGERI AIRLINES a.s.</h1>
+        <p>Zde můžeš začít psát texty o vaší letecké společnosti, představit flotilu, destinace nebo rezervační informace.</p>
     </main>
-
-    <footer>
-        Sídlo: Aviatická 1092/8, Praha 6 | IČO: 098 71 426<br>
-        &copy; 2026 Langeri Airlines a.s. Všechna práva vyhrazena.
-    </footer>
 
 </body>
 </html>
